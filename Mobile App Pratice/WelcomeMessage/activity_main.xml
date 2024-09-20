@@ -21,9 +21,13 @@
         android:id="@+id/imageView2"
         android:layout_width="134dp"
         android:layout_height="148dp"
-        app:srcCompat="@drawable/bad"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392"
+        app:srcCompat="@drawable/bad" />
 
     <TextView
         android:layout_width="wrap_content"
