@@ -11,7 +11,7 @@ This course focuses on the fundamentals of mobile application development, cover
 
 ## Repository Structure
 
-- **/ProjectName**: Each folder contains a mobile app project with only the Java source files and layout XML files uploaded.
+- **/ProjectName**: Each folder contains a mobile app project with only the Java source files, layout XML files and other necessary files.
 
 ## Tools & Technologies
 
