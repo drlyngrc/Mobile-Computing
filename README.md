@@ -24,22 +24,27 @@ This course focuses on the fundamentals of mobile application development, cover
 ## Projects
 
 1. **Welcome Message**
-   - Description: A simple app that displays wlecome message.
+   - A simple app that displays wlecome message.
   
 2. **Form**
-   - Description: A simple form that accepts user input but does not yet have database integration.
+   - A simple form that accepts user input but does not yet have database integration.
    - Features:
        - Basic text input fields for collecting user data
    - Concepts covered: XML UI design, form creation, handling user input
 
 3. **Login and Signup App**
-   - Description: A simple app with user authentication screens (Login & Signup) and basic form validation.
+   - A simple app with user authentication screens (Login & Signup) and basic form validation.
    - Features: 
      - Email and password validation
      - UI built with CardView and LinearLayout
    - Concepts covered: XML UI design, activity transitions, form validation using Java
 
-  4. **Calculator** (soon)
+  4. **Calculator**
+     - A simple calculator that performs basic arithmetic operations and handles special functions like percent and toggling positive/negative numbers.
+     - Features:
+       - Basic operations: addition, subtraction, multiplication, and division.
+       - Special functions: percentage, positive/negative, and decimal inputs.
+     - Concepts Covered: Handling user input, mathematical operations, and managing UI updates in response to user actions.
 
 
 ## Future Enhancements
@@ -52,3 +57,4 @@ This course focuses on the fundamentals of mobile application development, cover
 For any questions or collaborations, feel free to reach out at:
 - **Email**: [misaka.yuki.zsan@gmail.com]
 - **GitHub**: [github.com/drlyngrc]
+- **Discord**: [nami9103]
