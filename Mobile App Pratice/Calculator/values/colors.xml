@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#101010</color>
+    <color name="white">#EDEDED</color>
+    <color name="nonphotoblue">#9FE0F5</color>
+    <color name="rackley">#528CA2</color>
+    <color name="ateneoblue">#12376c</color>
+    <color name="maxpurple">#743E84</color>
+    <color name="lightcoral">#E97B8A</color>
+    <color name="pinkpearl">#EBB0CD</color>
+
+    <!--ios-->
+    <color name="lightgray">#d4d4d2</color>
+    <color name="eerieblack">#1c1c1c</color>
+    <color name="darkliver">#505050</color>
+    <color name="vividgamboge">#ff9500</color>
+</resources>
