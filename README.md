@@ -39,12 +39,16 @@ This course focuses on the fundamentals of mobile application development, cover
      - UI built with CardView and LinearLayout
    - Concepts covered: XML UI design, activity transitions, form validation using Java
 
-  4. **Calculator**
+4. **Calculator**
      - A simple calculator that performs basic arithmetic operations and handles special functions like percent and toggling positive/negative numbers.
      - Features:
        - Basic operations: addition, subtraction, multiplication, and division.
        - Special functions: percentage, positive/negative, and decimal inputs.
      - Concepts Covered: Handling user input, mathematical operations, and managing UI updates in response to user actions.
+
+5. **Studies**
+   
+6. **List View Flag**
 
 
 ## Future Enhancements
@@ -57,4 +61,4 @@ This course focuses on the fundamentals of mobile application development, cover
 For any questions or collaborations, feel free to reach out at:
 - **Email**: [misaka.yuki.zsan@gmail.com]
 - **GitHub**: [github.com/drlyngrc]
-- **Discord**: [nami9103]
+- **Discord**: [@nami9103]
