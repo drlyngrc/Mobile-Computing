@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobCom"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.Intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name=".Navigation.Main"
+            android:exported="false">
+
+        </activity>
+        <activity android:name=".Navigation.Profile"
+            android:exported="false"/>
+        <activity android:name=".Navigation.Setting"
+            android:exported="false"/>
+
+        <!--Flag-->
+        <activity
+            android:name=".Activity.Flag.ShowFlag"
+            android:exported="false"/>
+
+        <!--Activities-->
+        <activity
+            android:name=".Activity.Activities.ListActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Activities.WelcomeMsg"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Activities.RegForm"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Activities.SignupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Activities.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Activity.Activities.Calculator"
+            android:exported="false" />
+
+        <!--Studies-->
+        <activity android:name=".Activity.Study.ListStudy"
+            android:exported="false"/>
+        <activity android:name=".Activity.Study.InfraredStudy"
+            android:exported="false"/>
+        <activity android:name=".Activity.Study.BluetoothStudy"
+            android:exported="false"/>
+        <activity android:name=".Activity.Study.BtWirelessStudy"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
