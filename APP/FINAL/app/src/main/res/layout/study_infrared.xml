@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bluishblack"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:paddingLeft="40dp"
+                android:text="Infrared Communication"
+                android:textColor="@color/bluishblack"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="13dp"
+                android:text="Infrared communication is among the simplest wireless communication methods, and it serves as a cost-effective way of transmitting a few bits of data wirelessly. It’s safe to assume anyone reading this has used many different remote controls at home or work, and most of those simple devices communicate with the receiver via infrared pulses." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How IR communications work"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Infrared LEDs emit light at wavelengths around 950 nanometers that are invisible to the human eye, but other sources like light bulbs and the sun also produce infrared (IR) waves, complicating IR communications. Any device can send IR signals without needing authentication or authorization, meaning a universal remote can control multiple TVs using the same protocol."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="The simplest way to transmit binary data with an IR LED is to turn it on for a logical 1 and off for a logical 0. However, due to interference from other IR sources, this method is ineffective. Instead, the LED must pulse rapidly, typically at a carrier frequency of 38,000 Hz, to allow receivers to filter out unwanted signals. Other frequencies and wavelengths, like 940 nm and 36 kHz, can also be used, and most IR receivers are adaptable to slight variations."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/infrared_image1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Binary values are encoded as follows:\
+                \nLogical 1: a 562.2 µs burst followed by a 1.687 ms low period
+                \nLogical 0: a 562.2 µs burst followed by a 562.2 µs low period"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:text="The message frame itself comprises the following components:
+                \nA nine-millisecond leading pulse burst
+                \nA 4.5 ms low period
+                \nThe 8-bit address of the device
+                \nThe logical inverse of the first eight bits
+                \nThe 8-bit command
+                \nThe logical inverse of the command bits
+                \nA final 562.5 µs burst to signify the end of the message"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:text="The inverse of the address and command can be used as a checksum to verify that the two transmitted values are correct. Some remote controls, however, transfer a 16-bit address, and some of them even send 16-bit commands."
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:text="Note that different messages might have different transmission times. The NEC protocol also supports repeat commands which instruct the receiver to repeat the previous message."
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Summary"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="3dp"
+                android:text="Using IR LEDs and receivers for data transmission is a straightforward way of communicating wirelessly. The low transmission speeds of popular IR transmission protocols make this method easy to implement, even when using slow microcontrollers. The sender has to pulse the LED on and off to transmit data because many other objects emit IR radiation. Otherwise, the receiver wouldn’t be able to differentiate between actual messages and noise."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="The NEC protocol uses pulse distance encoding to distinguish between logic states in transmitted messages. The message itself consists of a synchronization sequence, typically followed by an eight-bit address and command. The RC5 protocol uses Manchester encoding to differentiate the logic states. The message itself contains two starting bits, a toggle bit, five address bits, and six data bits. Both systems support repeat sequences that tell the receiver to repeat the last command."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
